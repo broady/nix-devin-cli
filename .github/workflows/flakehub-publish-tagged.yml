@@ -24,6 +24,6 @@ jobs:
       - uses: "DeterminateSystems/flakehub-push@main"
         with:
           visibility: "public"
-          name: "broady/nix-devin-cli"
+          name: "cbro/nix-devin-cli"
           tag: "${{ inputs.tag }}"
           include-output-paths: true

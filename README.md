@@ -8,6 +8,12 @@
 
 ## Usage
 
+### Via FlakeHub
+
+```bash
+fh add cbro/nix-devin-cli
+```
+
 ### As a flake input
 
 ```nix

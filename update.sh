@@ -50,4 +50,20 @@ for upstream_key in "${!PLATFORM_MAP[@]}"; do
 done
 
 echo "$result" | jq . > "$OUTPUT"
+
+# Update version in README.md.
+README="$SCRIPT_DIR/README.md"
+if [ -f "$README" ]; then
+  sed -i.bak '/<!-- version-start -->/,/<!-- version-end -->/{
+    /<!-- version-start -->/{
+      a\
+**Latest version: '"$new_version"'**
+    }
+    /<!-- version-end -->/!{
+      /<!-- version-start -->/!d
+    }
+  }' "$README"
+  rm -f "$README.bak"
+fi
+
 echo "Updated manifest.json to $new_version"

@@ -25,4 +25,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add manifest.json README.md
           git commit -m "Update Devin CLI to ${version}"
-          git push
+          git tag "${version}"
+          git push --follow-tags

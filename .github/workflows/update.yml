@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update:
@@ -18,6 +19,7 @@ jobs:
         run: bash update.sh
 
       - name: Commit and push
+        id: push
         run: |
           git diff --quiet manifest.json && exit 0
           version=$(jq -r .version manifest.json)
@@ -27,3 +29,10 @@ jobs:
           git commit -m "Update Devin CLI to ${version}"
           git tag -a "${version}" -m "Devin CLI ${version}"
           git push origin main "${version}"
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger FlakeHub publish
+        if: steps.push.outputs.version
+        run: gh workflow run flakehub-publish-tagged.yml -f tag="${{ steps.push.outputs.version }}"
+        env:
+          GH_TOKEN: ${{ github.token }}

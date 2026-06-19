@@ -1,21 +1,21 @@
 {
-  "version": "2026.7.19",
+  "version": "2026.7.23",
   "platforms": {
     "x86_64-linux": {
-      "url": "https://static.devin.ai/cli/2026.7.19/devin-2026.7.19-x86_64-unknown-linux.tar.gz",
-      "hash": "sha256-y4BYaCO24xVQdtisoZTZrYuFhSO1/VwNtqXsVerYf6Q="
+      "url": "https://static.devin.ai/cli/2026.7.23/devin-2026.7.23-x86_64-unknown-linux.tar.gz",
+      "hash": "sha256-/jFRN1BIxOHPZ8++fv3lCdoCZepr+nE1WCN6Lqb0h54="
     },
     "aarch64-linux": {
-      "url": "https://static.devin.ai/cli/2026.7.19/devin-2026.7.19-aarch64-unknown-linux.tar.gz",
-      "hash": "sha256-qGRSCkrbS7FjwWApS+Vim+LR/OPoDPehcuy+0hrAFBI="
+      "url": "https://static.devin.ai/cli/2026.7.23/devin-2026.7.23-aarch64-unknown-linux.tar.gz",
+      "hash": "sha256-ae6qYMhwFBd4aUZ+212wcxKIC6yzlI/ZKbopuas2DvA="
     },
     "aarch64-darwin": {
-      "url": "https://static.devin.ai/cli/2026.7.19/devin-2026.7.19-aarch64-apple-darwin.tar.gz",
-      "hash": "sha256-oFY1W4vuKR/Lgj5Zsp1xrw++aV3dAk2GORd35Ijbt/w="
+      "url": "https://static.devin.ai/cli/2026.7.23/devin-2026.7.23-aarch64-apple-darwin.tar.gz",
+      "hash": "sha256-4eX9Gxh4t8b3ABjIAvecJcIIvVIJoSh7B99FTOmgmSg="
     },
     "x86_64-darwin": {
-      "url": "https://static.devin.ai/cli/2026.7.19/devin-2026.7.19-x86_64-apple-darwin.tar.gz",
-      "hash": "sha256-/aVcVdKVjF78h4FMSNsFyH9y6BsZwAaUZwobNAQBCqY="
+      "url": "https://static.devin.ai/cli/2026.7.23/devin-2026.7.23-x86_64-apple-darwin.tar.gz",
+      "hash": "sha256-igOB7aOha0e6y3vg/OrEzW8BrzM8bDstmwT7rTOoEhE="
     }
   }
 }

@@ -1,7 +1,7 @@
 # nix-devin-cli
 
 <!-- version-start -->
-**Latest version: 3000.2.17**
+**Latest version: 3000.3.22**
 <!-- version-end -->
 
 [Devin CLI](https://devin.ai) packaged for Nix, with nightly auto-updates.
